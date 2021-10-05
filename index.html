@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8dec688bfa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-text fs-4" id="instagram">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </span>
+            <!--Create a new post modal-->
+            <div class="d-flex flex-row">
+                <button type="button" id="publish-button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="fas fa-camera"></i></button>
+                                        <button type="button" class="btn btn-outline-secondary"><i
+                                                class="fas fa-map-marker-alt"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="cancel-button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" id="publish-button" class="btn btn-primary">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Settings and logout-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Pills tabs-->
+    <div class="container">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fas fa-th"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fas fa-stop"></i></button>
+            </li>
+        </ul>
+    </div>
+
+    <!--1st tab-->
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row d-flex flex-row m-auto px-2">
+                    <div class="col-4">
+                        <img src="https://www.ctvnews.ca/polopoly_fs/1.5216003.1607027329!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg"
+                            class="w-100" alt="basketball on bball court/">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://static-buyma-com.akamaized.net/imgdata/item/190217/0041598785/182956470/org.jpg"
+                            class="w-100"
+                            alt="cute baby boy wearing nike onesie">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://thumbs.dreamstime.com/b/little-boy-photographer-shooting-retro-camera-flash-isolated-48400699.jpg"
+                            class="w-100"
+                            alt="little boy taking a photograph">
+                    </div>
+                </div>
+                <div class="d-flex flex-row m-auto p-2">
+                    <div class="col">
+                        <img src="https://media.self.com/photos/5f189b76c58e27c99fbef9e3/1:1/w_768,c_limit/blackberry-vanilla-french-toast.jpg"
+                            class="w-100"
+                            alt="blackberry vanilla french toast">
+                    </div>
+                    <div class="col px-2">
+                        <img src="https://www.helpguide.org/wp-content/uploads/king-charles-spaniel-resting-head-768.jpg" class="w-100" alt="cute doggie"/>
+                    </div>
+                     <div class="col">
+                        <img src="https://cdn.shrm.org/image/upload/c_crop,h_705,w_1254,x_0,y_35/c_fit,f_auto,q_auto,w_767/v1/News/deciding_who_WFH_pfotmd?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjM1LCJ4MiI6MTI1NCwieTIiOjczOSwidyI6MTI1NCwiaCI6NzA1fX0%3D" class="w-100" alt="working with coffee and glasses on the side"/>
+                    </div>
+                </div>
+                <div class="d-flex flex-row m-auto p-2 h-100px">
+                    <div class="col">
+                        <img src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2018/11/hong-kong.jpg" class="w-100" alt="city view"/>
+                    </div>
+                    <div class="col px-2">
+                        <img src="https://i.imgur.com/aljloFP.jpg" class="w-100" alt="a beautiful view of the sea"/>
+                    </div>
+                    <div class="col">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/13541bd9-c500-4d2c-ab32-ab9483776071/dchgi5w-7a4a7ab5-9980-4699-8421-87d275b9ae4a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzNTQxYmQ5LWM1MDAtNGQyYy1hYjMyLWFiOTQ4Mzc3NjA3MVwvZGNoZ2k1dy03YTRhN2FiNS05OTgwLTQ2OTktODQyMS04N2QyNzViOWFlNGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.B84z8A56OBIfRw6Bp8feGUPzOd1XrRhgVyJ-qEbk3C0" class="w-100" alt="view of lupura on DeviantArt"/>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd Tab -->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+
+                <!--First card/post-->
+                <div class="card m-auto" id="photo-list" style="width: 40rem;">
+                    <div class="card-title d-flex flex-row justify-content-between">
+                        <h3 class="card-title ">My first post</h3>
+                        <p id="date" class="card-text">12/14</p>
+                    </div>
+                    <img src="https://www.ctvnews.ca/polopoly_fs/1.5216003.1607027329!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg"
+                        class="card-img-top" alt="basketball on bball court/">
+                    <div class="card-body">
+                        <p class="card-text"><strong>23 Likes</strong></p>
+                        <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                            testing purposes. I am learning to code with #BreatheCode</p>
+                        <div class="card-body d-flex flex row">
+                            <p id="comment" class="card-text d-inline-flex justify-content-start"><i
+                                    class="far fa-heart"></i>Comment...</p>
+                            <p id="more" class="card-text d-inline-flex justify-content-end"><i
+                                    class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <p> </p>
+                </div>
+
+                <div class="card m-auto" id="photo-list" style="width: 40rem;">
+                    <div class="card-title d-flex flex-row justify-content-between">
+                        <h3 class="card-title ">My first post</h3>
+                        <p id="date" class="card-text">12/14</p>
+                    </div>
+                    <img src="https://static-buyma-com.akamaized.net/imgdata/item/190217/0041598785/182956470/org.jpg"
+                        class="card-img-top" alt="cute baby boy wearing nike onesie">
+                    <div class="card-body">
+                        <p class="card-text"><strong>23 Likes</strong></p>
+                        <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                            testing purposes. I am learning to code with #BreatheCode</p>
+                        <div class="card-body d-flex flex row">
+                            <p id="comment" class="card-text d-inline-flex justify-content-start"><i
+                                    class="far fa-heart"></i>Comment...</p>
+                            <p id="more" class="card-text d-inline-flex justify-content-end"><i
+                                    class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <p>  </p>
+                </div>
+
+                <div class="card m-auto" id="photo-list" style="width: 40rem;">
+                    <div class="card-title d-flex flex-row justify-content-between">
+                        <h3 class="card-title ">My first post</h3>
+                        <p id="date" class="card-text">12/14</p>
+                    </div>
+                    <img src="https://thumbs.dreamstime.com/b/little-boy-photographer-shooting-retro-camera-flash-isolated-48400699.jpg"
+                        class="card-img-top" alt="little boy taking a photograph">
+                    <div class="card-body">
+                        <p class="card-text"><strong>23 Likes</strong></p>
+                        <p class="card-text">This is my first photo of the feed. This is a multi line comment for
+                            testing purposes. I am learning to code with #BreatheCode</p>
+                        <div class="card-body d-flex flex row">
+                            <p id="comment" class="card-text d-inline-flex justify-content-start"><i
+                                    class="far fa-heart"></i>Comment...</p>
+                            <p id="more" class="card-text d-inline-flex justify-content-end"><i
+                                    class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+               
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

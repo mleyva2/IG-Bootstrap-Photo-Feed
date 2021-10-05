@@ -1,0 +1,67 @@
+.w-100 {
+    width: 960px;
+    height: 400px;
+}
+
+.card-img-top {
+    width: 637px;
+    height: 400px;
+}
+
+#comment {
+    padding: 2px;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#pills-profile {
+    background-color: lightgrey;
+}
+
+#publish-button {
+    background-color: rgb(41, 158, 41);
+    color: white;
+}
+
+#cancel-button {
+    background-color: lightgray;
+    color: darkgray;
+    border-color: darkgray;
+}
+
+#instagram {
+    font-family: 'Lobster', cursive;
+}
+
+.nav-link.active {
+    background-color: darkgray;
+
+}
+
+.nav-pills .nav-item .active {
+    background-color: darkgray;
+    color: white;
+}
+
+.nav-pills .nav-item button{
+    color: darkslategray;
+    background-color: white;
+
+}
+
+.nav-pills .nav-item button:hover {
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+#date {
+    color: gray
+}
+
+.card-body #comment{
+    color: gray;
+}
+
